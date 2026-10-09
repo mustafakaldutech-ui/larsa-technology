@@ -26,7 +26,7 @@ import { ik } from './utils.js';
         // would just be a redundant duplicate once a custom logo is set.
         // Browser-tab icon: reuse the store logo.
         const icon = document.querySelector('link[rel="icon"]') || document.head.appendChild(Object.assign(document.createElement('link'), { rel: 'icon' }));
-        icon.href = ik(data.logo_url, 128, 128, 'at_max');
+        icon.href = ik(data.logo_url, 140, 140, 'at_max');
 
         document.querySelectorAll('.logo-word').forEach((el) => { el.hidden = true; });
     }
